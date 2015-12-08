@@ -56,6 +56,11 @@
 			tables[i].setAttribute("cellpadding", "0");
 		}
 
+		var tables = copy.getElementsByTagName("a");
+		for (var i = tables.length - 1; i >= 0; i--){
+		    tables[i].setAttribute("target", "_blank");
+		}
+
 		var x = copy.getElementsByTagName("script");
 		for (var i = x.length - 1; i >= 0; i--){
 		    x[i].parentElement.removeChild(x[i]);
