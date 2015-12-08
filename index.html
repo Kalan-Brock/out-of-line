@@ -20,7 +20,7 @@
 
 	<!--Your Email Code-->
 	<table>
-		
+
 	</table>
 	<!--End Your Email Code-->
 
@@ -35,7 +35,7 @@
 				collection[pointer].style.cssText += rules[idx].style.cssText;
 			}
 		}
-		
+
 		var x = document.head.getElementsByTagName("style");
 		for (var i = x.length - 1; i >= 0; i--){
 		    x[i].parentElement.removeChild(x[i]);
@@ -53,6 +53,7 @@
 		var tables = copy.getElementsByTagName("table");
 		for (var i = tables.length - 1; i >= 0; i--){
 		    tables[i].setAttribute("cellspacing", "0");
+			tables[i].setAttribute("cellpadding", "0");
 		}
 
 		var x = copy.getElementsByTagName("script");
